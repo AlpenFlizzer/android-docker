@@ -1,0 +1,11 @@
+version: "3.2"
+
+services:
+
+  android-vnc:
+    container_name: android-vnc
+    build: android-vnc
+    restart: always
+    privileged: true
+    ports:
+      - "5901:5901"
